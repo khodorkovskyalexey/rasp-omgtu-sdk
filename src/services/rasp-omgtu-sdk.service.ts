@@ -1,10 +1,10 @@
-import { BadRequestException, HttpService, Injectable } from '@nestjs/common';
+import { BadRequestException, HttpService, Inject, Injectable } from '@nestjs/common';
 import { firstValueFrom } from 'rxjs';
 import { RaspOmgtuScheduleFor, ScheduleResponse, SearchResponse } from '../rasp-omgtu-sdk.types';
 
 @Injectable()
 export class RaspOmgtuSdkService {
-  constructor(private readonly httpService: HttpService) {}
+  constructor(@Inject(HttpService) private readonly httpService: HttpService) {}
 
   static readonly baseApiUrl = 'https://rasp.omgtu.ru/api';
 

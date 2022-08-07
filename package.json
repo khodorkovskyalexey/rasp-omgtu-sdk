@@ -1,9 +1,11 @@
 {
-  "name": "rasp-omgtu-sdk",
-  "version": "1.0.0",
+  "name": "@khodorkovskyalexey/rasp-omgtu-sdk",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "get+https://github.com/khodorkovskyalexey/rasp-omgtu-sdk.git"
@@ -13,13 +15,17 @@
   },
   "homepage": "https://github.com/khodorkovskyalexey/rasp-omgtu-sdk#readme",
   "license": "MIT",
-  "keywords": ["Rasp", "Omgtu"],
+  "keywords": [
+    "Rasp",
+    "Omgtu"
+  ],
   "author": "terminator_79",
   "scripts": {
-    "prepare" : "npm run build",
+    "prepare": "npm run build",
     "build": "tsc"
   },
   "dependencies": {
+    "@nestjs/axios": "^0.1.0",
     "@nestjs/common": "8.0.0",
     "rxjs": "7.2.0"
   },
