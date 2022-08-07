@@ -1,6 +1,6 @@
 {
   "name": "@khodorkovskyalexey/rasp-omgtu-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -25,7 +25,6 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@nestjs/axios": "^0.1.0",
     "@nestjs/common": "8.0.0",
     "rxjs": "7.2.0"
   },
